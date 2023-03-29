@@ -3,7 +3,7 @@
 $base = new PDO('mysql:host=localhost; dbname=id20205701_samy', 'id20205701_samyouicher', '/&*hX18M$A}2#QGr');
 $base->exec("SET CHARACTER SET utf8");
 
-// Récupération des données du formulaire de contact
+// Récupération des données du formulaire de cotact
 $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
