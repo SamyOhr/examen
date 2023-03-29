@@ -1,12 +1,7 @@
 <?php
 // Connexion à la base de données
-$dsn = 'mysql:host=localhost; dbname=id20205701_samy';
-$username = 'id20205701_samyouicher';
-$password = '/&*hX18M$A}2#QGr';
-$options = array(
-    PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
-); 
-$dbh = new PDO($dsn, $username, $password, $options);
+$base = new PDO('mysql:host=localhost; dbname=id20205701_samy', 'id20205701_samyouicher', '/&*hX18M$A}2#QGr');
+$base->exec("SET CHARACTER SET utf8");
 
 // Récupération des données du formulaire de contact
 $name = $_POST['name'];
